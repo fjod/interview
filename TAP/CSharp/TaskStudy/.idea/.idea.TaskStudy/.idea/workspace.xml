@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06f50059-0dba-46c4-bcf8-e6818986de63" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskStudy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskStudy/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Awaitable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Awaitable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CookBook/Delay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CookBook/Delay.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LongRunningJob.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LongRunningJob.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +32,9 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Delay.cs" />
       <option value="$PROJECT_DIR$/Program.cs" />
+      <option value="$PROJECT_DIR$/CookBook/Delay.cs" />
       <option value="$PROJECT_DIR$/Awaitable.cs" />
       <option value="$PROJECT_DIR$/LongRunningJob.cs" />
-      <option value="$PROJECT_DIR$/CookBook/Delay.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nN4a07KcSGVcqfCsSpDjtaRiUz" />
@@ -81,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611217277540</updated>
       <workItem from="1611217288150" duration="40000" />
-      <workItem from="1611223408159" duration="8449000" />
+      <workItem from="1611223408159" duration="8994000" />
     </task>
     <servers />
   </component>

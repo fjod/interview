@@ -2,13 +2,27 @@
 using System;
 using System.Linq;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace TaskStudy
 {
     public static class LongRunningJob
     {
-        public static long CalcSum(int retries = 10000, CancellationToken token = default)
+      
+
+        public static long CalcSum(CancellationToken token)
+        {
+            return CalcSum(10000, token);
+        }
+
+        public static long CalcSum()
+        {
+            return CalcSum(10000, new CancellationToken());
+        }
+        public static long CalcSum(int retries)
+        {
+            return CalcSum(retries, new CancellationToken());
+        }
+        static long CalcSum(int retries, CancellationToken token)
         {
             var startTime = DateTime.Now;
             var range = Enumerable.Range(0, 65000);

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 namespace TaskStudy.CookBook
 {
     /// <summary>
-    /// use Task.Delay when in need to wait for something
+    /// use Task.Delay when in need to wait for something; Chapter 2.1
     /// </summary>
     public static class Delay
     {

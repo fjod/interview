@@ -100,7 +100,7 @@ namespace TaskStudy
 
         private void SetResult()
         {
-            _result = LongRunningJob.CalcSum(10000,_awaitable._token);
+            _result = LongRunningJob.CalcSum(_awaitable._token);
         }
     }
 }
