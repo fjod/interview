@@ -14,7 +14,7 @@ namespace TaskStudy.CookBook
             for (int i = 0; i < 3; i++)
             {
                 var current = DateTime.Now;
-                await CustomAwaiter.TryAwaitCustomType();
+                await CustomAwaiter.TryAwaitCustomType(CancellationToken.None);
                 await Task.Delay(i*1500);    
                 Console.WriteLine($"Total time was {(DateTime.Now -current).TotalMilliseconds} + with current delay {i*1500}");
             }
@@ -30,13 +30,16 @@ namespace TaskStudy.CookBook
         {
             Console.WriteLine($"Starting with timeout span in seconds = {span.TotalSeconds}");
             using var cts = new CancellationTokenSource(span);
-            Task<long> work = CustomAwaiter.TryAwaitCustomType();
+            CancellationTokenSource cancelTokenSource = new CancellationTokenSource();
+            Task<long> work = CustomAwaiter.TryAwaitCustomType(cancelTokenSource.Token);
             Task timeout = Task.Delay(Timeout.InfiniteTimeSpan, cts.Token);
             try
             {
-                Task completedTask = await Task.WhenAny(timeout,work);
+                //both Tasks will work to completion until something cancels work!
+                Task completedTask = await Task.WhenAny(timeout,work); 
                 if (completedTask == timeout)
                 {
+                    cancelTokenSource.Cancel();
                     Console.WriteLine("Timeout task completed before calculations");
                 }
                 else

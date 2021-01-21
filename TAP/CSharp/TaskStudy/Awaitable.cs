@@ -7,9 +7,9 @@ namespace TaskStudy
 {
     public static class CustomAwaiter
     {
-        public static async Task<long> TryAwaitCustomType()
+        public static async Task<long> TryAwaitCustomType(CancellationToken token)
         {
-            MyAwaitable test = new MyAwaitable();
+            MyAwaitable test = new MyAwaitable(token);
             var ret = await test;
             Console.WriteLine($"Awaitable type calculated {ret} value from long-running job!");
             return ret;
@@ -32,7 +32,7 @@ namespace TaskStudy
     //https://stackoverflow.com/questions/51375326/how-to-implement-the-oncompleted-method-of-a-custom-awaiter-correctly
     public struct MyAwaitable
     {
-        private volatile bool _finished;
+        private volatile bool _finished ;
         public bool IsFinished => _finished;
         public event Action Finished;
 
@@ -43,6 +43,14 @@ namespace TaskStudy
             Finished?.Invoke();
         }
 
+        public MyAwaitable(CancellationToken token)
+        {
+            _token = token;
+            _finished = false;
+            Finished = null;
+        }
+
+        public CancellationToken _token;
         public MyAwaiter GetAwaiter()
         {
             return new(this);
@@ -92,7 +100,7 @@ namespace TaskStudy
 
         private void SetResult()
         {
-            _result = LongRunningJob.CalcSum();
+            _result = LongRunningJob.CalcSum(10000,_awaitable._token);
         }
     }
 }

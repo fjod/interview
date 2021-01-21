@@ -18,6 +18,7 @@ namespace TaskStudy
             //await Delay.CalcWithDelays();
             await TimeOut.CalcUntilTimeout(TimeSpan.FromSeconds(4));
             await TimeOut.CalcUntilTimeout(TimeSpan.FromSeconds(1));
+            TrySleep();
         }
 
         private static void TrySleep()
