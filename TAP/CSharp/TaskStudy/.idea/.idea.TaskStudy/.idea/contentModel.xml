@@ -8,6 +8,7 @@
         <e p="Chapter 2" t="Include">
           <e p="Completed.cs" t="Include" />
           <e p="Delay.cs" t="Include" />
+          <e p="ProcessAsComplete.cs" t="Include" />
           <e p="ReportProgress.cs" t="Include" />
           <e p="SetOfTaskToComplete.cs" t="Include" />
         </e>

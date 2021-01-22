@@ -11,6 +11,7 @@ namespace TaskStudy
         static async Task Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            
             // LongRunningJob.CalcSum(); //just to try if it's really long running one!
             //await CustomAwaiter.TryAwaitCustomType(); //remember, it blocks the current Thread!
             //await CustomAwaiter.TryTCSAwaiter(); //also blocks Thread
@@ -32,9 +33,11 @@ namespace TaskStudy
             // progress.ProgressChanged += (_, i) => Console.WriteLine("Task is on step" + i);
             // await CustomAwaiter.Progress(progress);
 
-            var ret = await SetOfTaskToComplete.BigSum();
-            Console.WriteLine($"Calculated {ret} from several tasks");
+            // var ret = await SetOfTaskToComplete.BigSum();
+            // Console.WriteLine($"Calculated {ret} from several tasks");
 
+            var ret = await ProcessAsComplete.Calc();
+            Console.WriteLine($"Calculated {ret} from several tasks running in sequence");
             #endregion
         }
 

@@ -1,12 +1,18 @@
 ﻿using System;
 using System.Linq;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace TaskStudy
 {
     public static class LongRunningJob
     {
-      
+
+        public static Task<long> CalcSumTask(CancellationToken token = default)
+        {
+            var ret = CalcSum(token);
+            return Task.FromResult(ret);
+        }
 
         public static long CalcSum(CancellationToken token)
         {

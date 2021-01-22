@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06f50059-0dba-46c4-bcf8-e6818986de63" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CookBook/Chapter 2/Completed.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CookBook/Chapter 2/ReportProgress.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CookBook/Chapter 2/SetOfTaskToComplete.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CookBook/Chapter 2/ProcessAsComplete.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskStudy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskStudy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskStudy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskStudy/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Awaitable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Awaitable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CookBook/Delay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CookBook/Chapter 2/Delay.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LongRunningJob.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LongRunningJob.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
     </list>
@@ -38,14 +35,15 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Delay.cs" />
       <option value="$PROJECT_DIR$/CookBook/Delay.cs" />
-      <option value="$PROJECT_DIR$/LongRunningJob.cs" />
-      <option value="$PROJECT_DIR$/CookBook/Chapter 2/Delay.cs" />
       <option value="$PROJECT_DIR$/CookBook/Chapter 2/Completed.cs" />
       <option value="$PROJECT_DIR$/CookBook/Chapter 2/Progress.cs" />
-      <option value="$PROJECT_DIR$/Awaitable.cs" />
       <option value="$PROJECT_DIR$/CookBook/Chapter 2/ReportProgress.cs" />
-      <option value="$PROJECT_DIR$/Program.cs" />
       <option value="$PROJECT_DIR$/CookBook/Chapter 2/SetOfTaskToComplete.cs" />
+      <option value="$PROJECT_DIR$/CookBook/Chapter 2/Delay.cs" />
+      <option value="$PROJECT_DIR$/Program.cs" />
+      <option value="$PROJECT_DIR$/LongRunningJob.cs" />
+      <option value="$PROJECT_DIR$/Awaitable.cs" />
+      <option value="$PROJECT_DIR$/CookBook/Chapter 2/ProcessAsComplete.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nN4a07KcSGVcqfCsSpDjtaRiUz" />
@@ -91,7 +89,7 @@
       <updated>1611217277540</updated>
       <workItem from="1611217288150" duration="40000" />
       <workItem from="1611223408159" duration="9596000" />
-      <workItem from="1611294499740" duration="3630000" />
+      <workItem from="1611294499740" duration="7178000" />
     </task>
     <servers />
   </component>

@@ -30,7 +30,7 @@ namespace TaskStudy
     }
 
     //https://stackoverflow.com/questions/51375326/how-to-implement-the-oncompleted-method-of-a-custom-awaiter-correctly
-    public struct MyAwaitable
+    public class MyAwaitable
     {
         private volatile bool _finished ;
         public bool IsFinished => _finished;
