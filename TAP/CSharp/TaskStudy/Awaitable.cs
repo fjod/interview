@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace TaskStudy
 {
-    public static class CustomAwaiter
+    public static partial class CustomAwaiter
     {
         public static async Task<long> TryAwaitCustomType(CancellationToken token)
         {

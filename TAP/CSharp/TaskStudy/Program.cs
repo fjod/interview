@@ -2,6 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 using TaskStudy.CookBook;
+using TaskStudy.CookBook.Chapter_2;
 
 namespace TaskStudy
 {
@@ -15,10 +16,26 @@ namespace TaskStudy
             //await CustomAwaiter.TryTCSAwaiter(); //also blocks Thread
             
             //cookBook
+            
+            #region Chapter 2
             //await Delay.CalcWithDelays();
-            await TimeOut.CalcUntilTimeout(TimeSpan.FromSeconds(4));
-            await TimeOut.CalcUntilTimeout(TimeSpan.FromSeconds(1));
-            TrySleep();
+            
+            //await TimeOut.CalcUntilTimeout(TimeSpan.FromSeconds(4));
+            //await TimeOut.CalcUntilTimeout(TimeSpan.FromSeconds(1));
+            //TrySleep();
+
+            // await CompletedTask.Get().CalcSomething();
+            // await CompletedTask.Get().CalcSomething();
+            // await CompletedTask.Get().CalcSomething();
+
+            // var progress = new Progress<int>();
+            // progress.ProgressChanged += (_, i) => Console.WriteLine("Task is on step" + i);
+            // await CustomAwaiter.Progress(progress);
+
+            var ret = await SetOfTaskToComplete.BigSum();
+            Console.WriteLine($"Calculated {ret} from several tasks");
+
+            #endregion
         }
 
         private static void TrySleep()

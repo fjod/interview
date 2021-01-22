@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Linq;
 using System.Threading;
 
@@ -22,7 +21,7 @@ namespace TaskStudy
         {
             return CalcSum(retries, new CancellationToken());
         }
-        static long CalcSum(int retries, CancellationToken token)
+        public static long CalcSum(int retries, CancellationToken token)
         {
             var startTime = DateTime.Now;
             var range = Enumerable.Range(0, 65000);

@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace TaskStudy.CookBook
+namespace TaskStudy.CookBook.Chapter_2
 {
     /// <summary>
     /// use Task.Delay when in need to wait for something; Chapter 2.1
@@ -26,6 +26,11 @@ namespace TaskStudy.CookBook
     /// </summary>
     public static class TimeOut
     {
+        /// <summary>
+        /// 2.5 WhenAny; note that when first task completes, others continue work
+        /// </summary>
+        /// <param name="span"></param>
+        /// <returns></returns>
         public static async Task CalcUntilTimeout(TimeSpan span)
         {
             Console.WriteLine($"Starting with timeout span in seconds = {span.TotalSeconds}");
