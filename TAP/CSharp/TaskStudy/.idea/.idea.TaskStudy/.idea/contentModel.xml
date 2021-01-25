@@ -6,11 +6,15 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="CookBook" t="Include">
         <e p="Chapter 2" t="Include">
+          <e p="AsyncVoidEx.cs" t="Include" />
           <e p="Completed.cs" t="Include" />
+          <e p="Context.cs" t="Include" />
           <e p="Delay.cs" t="Include" />
           <e p="ProcessAsComplete.cs" t="Include" />
           <e p="ReportProgress.cs" t="Include" />
           <e p="SetOfTaskToComplete.cs" t="Include" />
+          <e p="ValueTask.cs" t="Include" />
+          <e p="ValueTaskConsumer.cs" t="Include" />
         </e>
       </e>
       <e p="LongRunningJob.cs" t="Include" />

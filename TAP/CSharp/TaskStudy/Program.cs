@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using TaskStudy.CookBook;
 using TaskStudy.CookBook.Chapter_2;
+using TaskStudy.CookBook.Chapter_2.Value;
 
 namespace TaskStudy
 {
@@ -36,9 +38,34 @@ namespace TaskStudy
             // var ret = await SetOfTaskToComplete.BigSum();
             // Console.WriteLine($"Calculated {ret} from several tasks");
 
-            var ret = await ProcessAsComplete.Calc();
-            Console.WriteLine($"Calculated {ret} from several tasks running in sequence");
-            #endregion
+            // var ret = await ProcessAsComplete.Calc();
+            // Console.WriteLine($"Calculated {ret} from several tasks running in sequence");
+            
+            // var ret1 = await Context.SwitchOnContext(); //thread 1 -> 4 -> 4 -> 5
+            // var ret2 = await Context.SameContext();
+            
+             // Context.PrintThread("1");
+             // var ret2 = await Context.SameContext();
+             // Context.PrintThread("2");
+             // var ret1 = await Context.SwitchOnContext();
+             // Context.PrintThread("3");
+          
+             //await AsyncVoidWrap.Invoke();
+
+             // try
+             // {
+             //     await CompletedValueTask.Get().CalcSomething();
+             //     await CompletedValueTask.Get().CalcSomething();
+             //     await CompletedValueTask.Get().CalcSomething();
+             // }
+             // catch (Exception e)
+             // {
+             //     Console.WriteLine(e);
+             // }
+             ValueTaskConsumerImp r = new ValueTaskConsumerImp();
+             await r.Test();
+
+             #endregion
         }
 
         private static void TrySleep()
