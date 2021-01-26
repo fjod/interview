@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using TaskStudy.CookBook;
 using TaskStudy.CookBook.Chapter_2;
 using TaskStudy.CookBook.Chapter_2.Value;
+using TaskStudy.CookBook.Chapter_3;
 
 namespace TaskStudy
 {
@@ -62,8 +63,36 @@ namespace TaskStudy
              // {
              //     Console.WriteLine(e);
              // }
-             ValueTaskConsumerImp r = new ValueTaskConsumerImp();
-             await r.Test();
+             // ValueTaskConsumerImp r = new ValueTaskConsumerImp();
+             // await r.Test();
+
+             #endregion
+             
+             #region Chapter 3
+
+             // AsyncEnumerable enumerable = new AsyncEnumerable();
+             // var ret = enumerable.GetValues();
+             // await foreach (var result in ret)
+             // {
+             //     Console.WriteLine(result);
+             // }
+             
+             
+             AsyncCancellation cancellation = new AsyncCancellation();
+             using var token = new CancellationTokenSource();
+             var query = cancellation.CancelMe(token.Token);
+             var now = DateTime.Now;
+             await foreach (var i in query)
+             {
+                 Console.WriteLine($"Got {i} from yandex");
+                 var diff = (DateTime.Now - now).TotalSeconds;
+                 Console.WriteLine($"It took {diff} seconds total");
+                 if (diff > 10)
+                 {
+                     token.Cancel();
+                     break;
+                 }
+             }
 
              #endregion
         }

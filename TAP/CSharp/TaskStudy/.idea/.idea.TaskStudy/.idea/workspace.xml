@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06f50059-0dba-46c4-bcf8-e6818986de63" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CookBook/Chapter 3/AsyncCancellation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CookBook/Chapter 3/AsyncEnumerable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CookBook/Chapter 3/LinqWithAsyncStream.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskStudy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskStudy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskStudy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskStudy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LongRunningJob.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LongRunningJob.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskStudy.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TaskStudy.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +31,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/study/interview/TAP/CSharp/TaskStudy/Awaitable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/study/interview/TAP/CSharp/TaskStudy/Awaitable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/1D0/Task.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/study/interview/TAP/CSharp/TaskStudy/Awaitable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/study/interview/TAP/CSharp/TaskStudy/Awaitable.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -39,14 +42,17 @@
       <option value="$PROJECT_DIR$/CookBook/Chapter 2/ReportProgress.cs" />
       <option value="$PROJECT_DIR$/CookBook/Chapter 2/SetOfTaskToComplete.cs" />
       <option value="$PROJECT_DIR$/CookBook/Chapter 2/Delay.cs" />
-      <option value="$PROJECT_DIR$/LongRunningJob.cs" />
       <option value="$PROJECT_DIR$/Awaitable.cs" />
       <option value="$PROJECT_DIR$/CookBook/Chapter 2/ProcessAsComplete.cs" />
       <option value="$PROJECT_DIR$/CookBook/Chapter 2/Context.cs" />
       <option value="$PROJECT_DIR$/CookBook/Chapter 2/AsyncVoidEx.cs" />
-      <option value="$PROJECT_DIR$/Program.cs" />
       <option value="$PROJECT_DIR$/CookBook/Chapter 2/ValueTask.cs" />
       <option value="$PROJECT_DIR$/CookBook/Chapter 2/ValueTaskConsumer.cs" />
+      <option value="$PROJECT_DIR$/LongRunningJob.cs" />
+      <option value="$PROJECT_DIR$/CookBook/Chapter 3/AsyncEnumerable.cs" />
+      <option value="$PROJECT_DIR$/CookBook/Chapter 3/LinqWithAsyncStream.cs" />
+      <option value="$PROJECT_DIR$/Program.cs" />
+      <option value="$PROJECT_DIR$/CookBook/Chapter 3/AsyncCancellation.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nN4a07KcSGVcqfCsSpDjtaRiUz" />
@@ -95,6 +101,7 @@
       <workItem from="1611294499740" duration="10311000" />
       <workItem from="1611553877301" duration="49000" />
       <workItem from="1611554302802" duration="7606000" />
+      <workItem from="1611656399712" duration="3267000" />
     </task>
     <servers />
   </component>

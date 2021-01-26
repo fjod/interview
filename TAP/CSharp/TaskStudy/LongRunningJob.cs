@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -7,6 +9,12 @@ namespace TaskStudy
 {
     public static class LongRunningJob
     {
+        private static Lazy<HttpClient> _webClient = new Lazy<HttpClient>();
+        public static async Task<int> GetYandexPageContent(CancellationToken token = default)
+        {
+            var ret = await _webClient.Value.GetStringAsync(new Uri("http://www.ya.ru"), token);
+            return ret.Length;
+        }
 
         public static Task<long> CalcSumTask(CancellationToken token = default)
         {

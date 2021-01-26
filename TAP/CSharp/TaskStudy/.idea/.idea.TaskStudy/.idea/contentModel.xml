@@ -16,6 +16,11 @@
           <e p="ValueTask.cs" t="Include" />
           <e p="ValueTaskConsumer.cs" t="Include" />
         </e>
+        <e p="Chapter 3" t="Include">
+          <e p="AsyncCancellation.cs" t="Include" />
+          <e p="AsyncEnumerable.cs" t="Include" />
+          <e p="LinqWithAsyncStream.cs" t="Include" />
+        </e>
       </e>
       <e p="LongRunningJob.cs" t="Include" />
       <e p="obj" t="ExcludeRecursive">
