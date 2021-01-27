@@ -1,13 +1,35 @@
 ﻿// Learn more about F# at http://docs.microsoft.com/dotnet/fsharp
-
-open System
+open TaskStudy.Basic
+open TaskStudy.Sleep
 
 // Define a function to construct a message to print
-let from whom =
-    sprintf "from %s" whom
+
 
 [<EntryPoint>]
 let main argv =
-    let message = from "F#" // Call the function
-    printfn "Hello world %s" message
-    0 // return an integer exit code
+      
+    
+//   let Hello : Async<string> =
+//        async {
+//            return "Hello from async!"
+//        }  
+//  
+//   let printHello =
+//       async {
+//           let! text  = Hello
+//           return printf "%s" text
+//       }
+//   printHello |> Async.Start
+//   FiveSecondsSleep
+   
+   let rand = System.Random()
+   let pickNumAsync = async { return rand.Next(10) }
+   let create =
+       let workFlows = [1..50] |> Seq.map (fun _ -> pickNumAsync)
+       async{
+           let! numbs = workFlows |> Async.Parallel
+           printf "%d" (numbs |> Array.sum)
+       }
+   create |> Async.Start
+   FiveSecondsSleep
+   0 // return an integer exit code

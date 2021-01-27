@@ -6,7 +6,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="Program.fs"/>
+        <Compile Include="Sleep.fs" />
+        <Compile Include="Basic.fs" />
+        <Compile Include="Program.fs" />
     </ItemGroup>
 
 </Project>
