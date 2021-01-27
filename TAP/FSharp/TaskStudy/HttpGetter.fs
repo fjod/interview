@@ -9,7 +9,7 @@ let downloadString (uri:string)  =
     async{
        try
         let! data = client.GetStringAsync(GoodUri) |> Async.AwaitTask
-        return Some data    
+        return Some data        
        with
        | :? System.Exception  -> return None        
        
