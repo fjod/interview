@@ -1,11 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using TaskStudy.CookBook;
+using TaskStudy.CookBook.Chapter_12;
 using TaskStudy.CookBook.Chapter_2;
 using TaskStudy.CookBook.Chapter_2.Value;
 using TaskStudy.CookBook.Chapter_3;
+using TaskStudy.CookBook.Chapter_4;
+using TaskStudy.CookBook.Chapter_9;
 
 namespace TaskStudy
 {
@@ -78,22 +83,60 @@ namespace TaskStudy
              // }
              
              
-             AsyncCancellation cancellation = new AsyncCancellation();
-             using var token = new CancellationTokenSource();
-             var query = cancellation.CancelMe(token.Token);
-             var now = DateTime.Now;
-             await foreach (var i in query)
-             {
-                 Console.WriteLine($"Got {i} from yandex");
-                 var diff = (DateTime.Now - now).TotalSeconds;
-                 Console.WriteLine($"It took {diff} seconds total");
-                 if (diff > 10)
-                 {
-                     token.Cancel();
-                     break;
-                 }
-             }
+             // AsyncCancellation cancellation = new AsyncCancellation();
+             // using var token = new CancellationTokenSource();
+             // var query = cancellation.CancelMe(token.Token);
+             // var now = DateTime.Now;
+             // await foreach (var i in query)
+             // {
+             //     Console.WriteLine($"Got {i} from yandex");
+             //     var diff = (DateTime.Now - now).TotalSeconds;
+             //     Console.WriteLine($"It took {diff} seconds total");
+             //     if (diff > 10)
+             //     {
+             //         token.Cancel();
+             //         break;
+             //     }
+             // }
 
+             #endregion
+
+             #region Chapter 4
+
+             // ParallelBasics pb = new ParallelBasics();
+             // List<BigClass> input = new List<BigClass>(); 
+             // foreach (var i in Enumerable.Range(0,5))
+             // {
+             //    
+             //     input.Add(new BigClass());
+             // }
+             // var ret = pb.CalcAsParallel3(input);
+             // Console.WriteLine($"result of parallel calc is {ret}");
+
+             // var t = new Invoke();
+             // var ret = t.Test(new BigClass(), new BigClass());
+             // Console.WriteLine($"result of parallel calc is {ret}");
+
+             #endregion
+
+             #region Chapter 9
+
+             // var z = new Collections();
+             // z.TestStack();
+
+             #endregion
+
+             #region Chapter 12
+
+             // Modify m = new Modify();
+             // var ret = await m.Check();
+             // Console.WriteLine(ret);
+
+             AsyncSignal ass = new AsyncSignal();
+             var t1 = ass.Initialize();
+             var t2 = ass.WaitForInitAsync();
+             await Task.WhenAll(t1, t2);
+             Console.WriteLine(t2.Result);   
              #endregion
         }
 

@@ -5,6 +5,9 @@
       <e p="Awaitable.cs" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="CookBook" t="Include">
+        <e p="Chapter 12" t="Include">
+          <e p="Modify.cs" t="Include" />
+        </e>
         <e p="Chapter 2" t="Include">
           <e p="AsyncVoidEx.cs" t="Include" />
           <e p="Completed.cs" t="Include" />
@@ -20,6 +23,14 @@
           <e p="AsyncCancellation.cs" t="Include" />
           <e p="AsyncEnumerable.cs" t="Include" />
           <e p="LinqWithAsyncStream.cs" t="Include" />
+        </e>
+        <e p="Chapter 4" t="Include">
+          <e p="Invoke.cs" t="Include" />
+          <e p="ParallelBasics.cs" t="Include" />
+        </e>
+        <e p="Chapter 9" t="Include">
+          <e p="AsyncSignal.cs" t="Include" />
+          <e p="Collections.cs" t="Include" />
         </e>
       </e>
       <e p="LongRunningJob.cs" t="Include" />
