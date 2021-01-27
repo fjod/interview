@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06f50059-0dba-46c4-bcf8-e6818986de63" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CookBook/Chapter 12/Modify.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CookBook/Chapter 4/Invoke.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CookBook/Chapter 4/ParallelBasics.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CookBook/Chapter 9/AsyncSignal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CookBook/Chapter 9/Collections.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskStudy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskStudy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskStudy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskStudy/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
     </list>
@@ -56,8 +50,8 @@
       <option value="$PROJECT_DIR$/CookBook/Chapter 4/Invoke.cs" />
       <option value="$PROJECT_DIR$/CookBook/Chapter 9/Collections.cs" />
       <option value="$PROJECT_DIR$/CookBook/Chapter 12/Modify.cs" />
-      <option value="$PROJECT_DIR$/Program.cs" />
       <option value="$PROJECT_DIR$/CookBook/Chapter 9/AsyncSignal.cs" />
+      <option value="$PROJECT_DIR$/Program.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nN4a07KcSGVcqfCsSpDjtaRiUz" />
@@ -108,7 +102,7 @@
       <workItem from="1611554302802" duration="7606000" />
       <workItem from="1611656399712" duration="3873000" />
       <workItem from="1611724498403" duration="3934000" />
-      <workItem from="1611729701136" duration="4223000" />
+      <workItem from="1611729701136" duration="5897000" />
     </task>
     <servers />
   </component>

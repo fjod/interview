@@ -132,11 +132,18 @@ namespace TaskStudy
              // var ret = await m.Check();
              // Console.WriteLine(ret);
 
-             AsyncSignal ass = new AsyncSignal();
-             var t1 = ass.Initialize();
-             var t2 = ass.WaitForInitAsync();
-             await Task.WhenAll(t1, t2);
-             Console.WriteLine(t2.Result);   
+             // AsyncSignal ass = new AsyncSignal();
+             // var t1 = ass.Initialize();
+             // var t2 = ass.WaitForInitAsync();
+             // await Task.WhenAll(t1, t2);
+             // Console.WriteLine(t2.Result);   
+             #endregion
+
+             #region Chapter 14
+
+             int val = 0;
+             Lazy<int> Shared = new Lazy<int>(() => val = 10);
+             Console.WriteLine(Shared.Value);
              #endregion
         }
 
